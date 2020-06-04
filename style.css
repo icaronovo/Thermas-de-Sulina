@@ -39,18 +39,18 @@ body {
   display: block;
 }
 
-#carouselInicio {
+#Inicio {
   margin-top: 91px;
   height:85vh;
   position: relative;
 }
 
-#carouselInicio .carousel-inner {
+#Inicio .carousel-inner {
   position: absolute;
   height: 100%;
 }
 
-#carouselInicio .carousel-inner .carousel-item {
+#Inicio .carousel-inner .carousel-item {
   position: absolute;
   background-position: center 0;
   background-repeat: no-repeat;
@@ -58,7 +58,7 @@ body {
   background-size: cover;
 }
 
-#carouselInicio .carousel-caption {
+#Inicio .carousel-caption {
   z-index:10;
   width: 80%;
   height:240px;
@@ -70,7 +70,7 @@ body {
   transform:translate(-50%, -50%);
 }
 
-#carouselInicio .carousel-caption h1 {
+#Inicio .carousel-caption h1 {
   line-height: 80px;
   text-align: center;
   margin: 0px;
@@ -78,7 +78,7 @@ body {
   font-size: 3rem;
 }
 
-#hospedagens {
+#Hospedagens {
   margin-bottom: 60px;
 }
 
@@ -95,6 +95,7 @@ body {
   font-size: 35px;
   padding-right: 30px;
   text-align: right;
+  border-bottom: solid 0.5px white;
 }
 
 .row2 {
@@ -103,30 +104,96 @@ body {
   position: relative;
 }
 
-.texto {
+.texto h1 {
+  text-align: center;
+  padding-top: 10px;
+}
+
+.texto p {
+  padding: 5px 15px;
   text-align: justify;
-  font-size: 24px;
+  font-size: 20px;
 }
 
-
-.slider {
-  /* line them up horizontally */
-  display: flex;
-
-  /* allow for scrolling */
-  overflow-x: auto;
-
-  /* make it smooth on iOS */
-  -webkit-overflow-scrolling: touch;
+#slideshowHospedagens {
+  padding: 0px;
 }
-.slider > div {
-  z-index: 1;
-  /* make sure the width is honored */
-  flex-shrink: 0;
-  margin:10px;
-  width: 380px;
+
+#carouselHospedagens {
+  position: absolute;
+  height: 100%;
+}
+
+#carousel-inner-hospedagens {
   height: 380px;
-  background-position: center 0;
-  background-repeat: no-repeat;
+  width: 645px;
+  margin: 10px;
+}
+
+#carousel-inner-hospedagens .carousel-item {
+  height: 100%;
   background-size: cover;
+  background-repeat: no-repeat;
+}
+
+
+
+
+@media (min-width: 993px) and (max-width: 1990px) {
+
+  #carousel-inner-hospedagens {
+    width: 520px;
+    margin: 10px;
+  } 
+
+
+
+}
+
+
+
+
+
+@media(max-width:992px) {
+  
+  .row2 {
+    height: 800px;
+  }
+
+  .texto {
+    padding: 10px;
+    height: 300px;
+  }
+
+  .texto p {
+    font-size: 1.5em;
+  }
+
+  #slideshowHospedagens {
+    position: relative;
+    height: 500px;
+  }
+
+  #carouselHospedagens {
+    position: relative;
+    height: 100%;
+  }
+
+  #carousel-inner-hospedagens {
+    position: absolute;
+    height: 90%;
+    width: 90%;
+    margin: 5%;
+  }
+
+}
+
+
+
+@media(max-width:576px) {
+
+.texto p {
+    font-size: 1.2em;
+  }
+
 }
