@@ -1,13 +1,42 @@
 @import url('https://fonts.googleapis.com/css?family=Lato400,700');
 
+html{
+  scroll-behavior: smooth;
+}
+
 body {
   overflow-x: hidden;
   font-family: 'Lato', sans-serif;
+  background-image: linear-gradient(rgba(204, 230, 255, 0.7), rgba(204, 230, 255, 0.8)) , url(img/fundi.jpg);
+  background-position: center 0;
+  background-repeat: no-repeat;
+  height: 100%;
+  background-size: cover;
+  
 }
 
 .navbar {
   background-color: rgb(0, 0, 102);
   border-bottom: 0.5px solid white;
+}
+
+.navbar-nav {
+  vertical-align: middle;
+}
+
+.nav-item {
+  width: 130px;
+}
+
+.nav-link {
+  height: 60px;
+  margin-top: auto;
+  margin-bottom: auto;
+  text-align: center;
+}
+
+.navbar a {
+  font-size: 20px;
 }
 
 .navbar-brand {
@@ -16,10 +45,6 @@ body {
 
 .navbar-brand img {
   height: 74px;
-}
-
-.navbar a {
-  font-size: 20px;
 }
 
 .navbar-dark .navbar-nav .nav-link {
@@ -31,17 +56,10 @@ body {
   color: cyan;
 }
 
-#inicio {
-  z-index: -9;
-  border: 0;
-  padding: 0;
-  width: 100%;
-  display: block;
-}
-
 #Inicio {
-  margin-top: 91px;
-  height:85vh;
+  display: block;
+  margin-top: -4px;
+  height:89vh;
   position: relative;
 }
 
@@ -78,15 +96,11 @@ body {
   font-size: 3rem;
 }
 
-#Hospedagens {
-  margin-bottom: 60px;
+.pusher {
+  height: 95px;
 }
 
-.container {
-  margin-top: 60px;
-}
-
-#row1 {
+.row1 {
   background-color: rgb(25,25,112);
   color: white;
   font-weight: bold;
@@ -95,13 +109,13 @@ body {
   font-size: 35px;
   padding-right: 30px;
   text-align: right;
-  border-bottom: solid 0.5px white;
 }
 
 .row2 {
   height: 400px;
   background-color: #dcdcdc;
   position: relative;
+  margin-bottom: 5px;
 }
 
 .texto h1 {
@@ -115,49 +129,81 @@ body {
   font-size: 20px;
 }
 
-#slideshowHospedagens {
+#slideshowChales {
   padding: 0px;
 }
 
-#carouselHospedagens {
+#carouselChales {
+  position: absolute;
+  height: 99%;
+  width: 99%;
+  margin: 0.5%;
+}
+
+#carousel-inner-Chales {
   position: absolute;
   height: 100%;
+  width: 100%;
 }
 
-#carousel-inner-hospedagens {
-  height: 380px;
-  width: 645px;
-  margin: 10px;
-}
-
-#carousel-inner-hospedagens .carousel-item {
+#carousel-inner-Chales .carousel-item {
   height: 100%;
   background-size: cover;
   background-repeat: no-repeat;
 }
 
-
-
-
-@media (min-width: 993px) and (max-width: 1990px) {
-
-  #carousel-inner-hospedagens {
-    width: 520px;
-    margin: 10px;
-  } 
-
-
-
+#row2-camping {
+  position: relative;
 }
 
+#slideshowCamping {
+  position: absolute;
+  height: 100%;
+  padding: 0px;
+}
 
+#carouselCamping {
+  position: absolute;
+  height: 99%;
+  width: 99%;
+  margin: 0.5%;
+}
 
+#carousel-inner-Camping {
+  position: absolute;
+  height: 100%;
+  width: 100%;
+}
 
+#carousel-inner-Camping .carousel-item {
+  height: 100%;
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+
+#texto-camping {
+  position: absolute;
+  right: 0px;
+}
+
+#slideshowCamping {
+  position: absolute;
+  left: 0;
+}
 
 @media(max-width:992px) {
   
+  .nav-item {
+    width: 100%;
+  }
+
+  .pusher {
+    height: 90px;
+  }
+
   .row2 {
-    height: 800px;
+    height: 700px;
+    border: 0.5px solid rgb(25,25,112);
   }
 
   .texto {
@@ -169,22 +215,22 @@ body {
     font-size: 1.5em;
   }
 
-  #slideshowHospedagens {
-    position: relative;
-    height: 500px;
-  }
-
-  #carouselHospedagens {
-    position: relative;
-    height: 100%;
-  }
-
-  #carousel-inner-hospedagens {
+  #carouselChales {
     position: absolute;
-    height: 90%;
-    width: 90%;
-    margin: 5%;
+    bottom: 0;
+    height: 400px;
+    width: 99%;
   }
+
+  #carouselCamping {
+    position: absolute;
+    bottom: 0;
+    height: 400px;
+    width: 99%;
+  }
+
+ 
+
 
 }
 
@@ -192,8 +238,68 @@ body {
 
 @media(max-width:576px) {
 
-.texto p {
-    font-size: 1.2em;
+  .navbar-brand img {
+    height: 54px;
   }
+
+  .pusher {
+    height: 60px;
+  }
+
+  .row1 {
+    background-color: rgb(25,25,112);
+    color: white;
+    font-weight: bold;
+    height: 40px;
+    line-height: 35px;
+    padding-top: 2.5px;
+    font-size: 1.2em;
+    padding-right: 0px;
+    text-align: left;
+    border-bottom: solid 0.5px white;
+  }
+
+  .row2 {
+    height: 600px;
+    border: none;
+  }
+
+  #carouselChales {
+    position: absolute;
+    bottom: 0;
+    height: 400px;
+    width: 98%;
+  } 
+
+  #carouselCamping {
+    position: absolute;
+    bottom: 0;
+    height: 400px;
+    width: 98%;
+  }
+
+  .texto h1 {
+    font-size: 1.5em;
+  }
+
+  .texto p {
+      font-size: 0.8em;
+      padding: 0px;
+  }
+
+  .texto {
+    padding: 10px;
+    height: 200px;
+  }
+
+}
+
+
+@media(max-width:576px) {
+  .navbar-brand img {
+    height: 44px;
+  }
+
+
 
 }

@@ -11,7 +11,7 @@
 <body data-spy="scroll" data-target="#navbar-responsive">
 
     <nav class="navbar navbar-expand-lg navbar-dark fixed-top">
-        <a class="navbar-brand" href="#">
+        <a class="navbar-brand" href="#inicio-pusher">
             <img src="img/logo.png">
         </a>
         <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarResponsive">
@@ -20,28 +20,25 @@
 
         <div class="collapse navbar-collapse" id="navbarResponsive">
             <ul class="navbar-nav ml-auto">
-                <li class="nav-item">
-                    <a class="nav-link" href="#Inicio">Início</a>
+
+                <li class="nav-item" id="nav-item-Chales">
+                    <a class="nav-link" href="#Chales-pusher">Hospedagens</a>
                 </li>
 
                 <li class="nav-item">
-                    <a class="nav-link" href="#Hospedagens">Hospedagens</a>
+                    <a class="nav-link" href="#aquatico-pusher">Parque aquático</a>
                 </li>
 
                 <li class="nav-item">
-                    <a class="nav-link" href="#Parque-aquatico">Parque aquático</a>
-                </li>
-
-                <li class="nav-item">
-                    <a class="nav-link" href="#Parque-de-aventuras">Parque de aventuras</a>
+                    <a class="nav-link" href="#venturas-pusher">Parque de aventuras</a>
                 </li>
                 
                 <li class="nav-item">
-                    <a class="nav-link" href="#Gastronomia">Gastronomia</a>
+                    <a class="nav-link" href="#Gastronomia-pusher">Gastronomia</a>
                 </li>
 
                 <li class="nav-item">
-                    <a class="nav-link" href="#Contato">Contato</a>
+                    <a class="nav-link" href="#Contato-pusher">Contato</a>
                 </li>
 
             </ul>
@@ -49,6 +46,8 @@
         </div>
 
     </nav>
+
+    <div class="pusher" id="inicio-pusher"></div>
 
     <div id="Inicio" class="carousel slide" data-ride="carousel">
         
@@ -79,10 +78,11 @@
         
     </div>
 
+    <div class="pusher" id="Chales-pusher"></div>
 
-    <div class="container" id="Hospedagens">
+    <div class="container" id="Chales">
         <div class="row">
-            <div class="col-12" id="row1">HOSPEDAGENS</div>
+            <div class="col-12 row1">Hospedagens</div>
         </div>
 
         <div class="row row2">
@@ -93,17 +93,17 @@
                 </p>
             </div>
 
-            <div class=" col-12 col-sm-12 col-md-12 col-lg-7 col-xl-7" id="slideshowHospedagens">            
-                <div id="carouselHospedagens" class="carousel slide" data-ride="carousel">
+            <div class="col-12 col-sm-12 col-md-12 col-lg-7 col-xl-7" id="slideshowChales">            
+                <div id="carouselChales" class="carousel slide" data-ride="carousel">
 
                     <ol class="carousel-indicators">
-                        <li data-target="#carouselHospedagens" data-slide-to="0" class="active"></li>
-                        <li data-target="#carouselHospedagens" data-slide-to="1" class="active"></li>
-                        <li data-target="#carouselHospedagens" data-slide-to="2" class="active"></li>
-                        <li data-target="#carouselHospedagens" data-slide-to="3" class="active"></li>
+                        <li data-target="#carouselChales" data-slide-to="0" class="active"></li>
+                        <li data-target="#carouselChales" data-slide-to="1" class="active"></li>
+                        <li data-target="#carouselChales" data-slide-to="2" class="active"></li>
+                        <li data-target="#carouselChales" data-slide-to="3" class="active"></li>
                     </ol>
 
-                    <div class="carousel-inner" id="carousel-inner-hospedagens">
+                    <div class="carousel-inner" id="carousel-inner-Chales">
                         <div class="carousel-item active" style="background-image: url(img/hospedagens/chales/img1.JPG)">
                         </div>
                         <div class="carousel-item " style="background-image: url(img/hospedagens/chales/img2.JPG)">
@@ -112,48 +112,101 @@
                         </div>
                         <div class="carousel-item " style="background-image: url(img/hospedagens/chales/img4.JPG)">
                         </div>
-                        
-                       
                     
                     </div>
 
-                    <a class="carousel-control-prev" href="#carouselHospedagens" role="button" data-slide="prev">
+                    <a class="carousel-control-prev" href="#carouselChales" role="button" data-slide="prev">
                         <span class="carousel-control-prev-icon" aria-hidden="true"></span>
                         <span class="sr-only">Anterior</span>
                     </a>
 
-                    <a class="carousel-control-next" href="#carouselHospedagens" role="button" data-slide="next">
+                    <a class="carousel-control-next" href="#carouselChales" role="button" data-slide="next">
                         <span class="carousel-control-next-icon" aria-hidden="true"></span>
                         <span class="sr-only">Próxima</span>
                     </a>
 
                 </div>
             </div>
+
+
         </div>
+
+
+        <div class="row row2" id="row2-camping">
+            <div class="col-12 col-sm-12 col-md-12 col-lg-5 col-xl-5 texto" id="texto-camping">
+                <h1>CAMPING E MOTORHOME</h1>
+                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+                consequat.
+                </p>
+            </div>
+
+            <div class="col-12 col-sm-12 col-md-12 col-lg-7 col-xl-7" id="slideshowCamping">            
+                <div id="carouselCamping" class="carousel slide" data-ride="carousel">
+
+                    <ol class="carousel-indicators">
+                        <li data-target="#carouselCamping" data-slide-to="0" class="active"></li>
+                        <li data-target="#carouselCamping" data-slide-to="1" class="active"></li>
+                        <li data-target="#carouselCamping" data-slide-to="2" class="active"></li>
+                        <li data-target="#carouselCamping" data-slide-to="3" class="active"></li>
+                    </ol>
+
+                    <div class="carousel-inner" id="carousel-inner-Camping">
+                        <div class="carousel-item active" style="background-image: url(img/hospedagens/chales/img1.JPG)">
+                        </div>
+                        <div class="carousel-item " style="background-image: url(img/hospedagens/chales/img2.JPG)">
+                        </div>
+                        <div class="carousel-item " style="background-image: url(img/hospedagens/chales/img3.JPG)">
+                        </div>
+                        <div class="carousel-item " style="background-image: url(img/hospedagens/chales/img4.JPG)">
+                        </div>
+                    </div>
+
+                    <a class="carousel-control-prev" href="#carouselCamping" role="button" data-slide="prev">
+                        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                        <span class="sr-only">Anterior</span>
+                    </a>
+
+                    <a class="carousel-control-next" href="#carouselCamping" role="button" data-slide="next">
+                        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                        <span class="sr-only">Próxima</span>
+                    </a>
+
+                </div>
+            </div>
+
+
+        </div>
+
+
+  
+
     </div>
 
-
+    <div class="pusher" id="aquatico-pusher"></div>
     <div class="container" id="Parque-aquatico">
         <div class="row">
-            <div class="col-12" id="row1">PARQUE AQUÁTICO</div>
+            <div class="col-12 row1">PARQUE AQUÁTICO</div>
         </div>
     </div>
 
+    <div class="pusher" id="aventuras-pusher"></div>
     <div class="container" id="Parque-de-aventuras">
         <div class="row">
-            <div class="col-12" id="row1">PARQUE DE AVENTURAS</div>
+            <div class="col-12 row1">PARQUE DE AVENTURAS</div>
         </div>
     </div>
 
+    <div class="pusher" id="Gastronomia-pusher"></div>
     <div class="container" id="Gastronomia">
         <div class="row">
-            <div class="col-12" id="row1">GASTRONOMIA</div>
+            <div class="col-12 row1">GASTRONOMIA</div>
         </div>
     </div>
 
+    <div class="pusher" id="Contato-pusher"></div>
     <div class="container" id="Contato">
         <div class="row">
-            <div class="col-12" id="row1">CONTATO</div>
+            <div class="col-12 row1">CONTATO</div>
         </div>
     </div>
 
