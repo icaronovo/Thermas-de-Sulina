@@ -15,35 +15,35 @@ body {
   
 }
 
-.navbar {
+#navbar {
   background-color: rgb(0, 0, 102);
   border-bottom: 0.5px solid white;
 }
 
-.navbar-nav {
+#navbar .navbar-nav {
   vertical-align: middle;
 }
 
-.nav-item {
+#navbar .nav-item {
   width: 130px;
 }
 
-.nav-link {
+#navbar .nav-link {
   height: 60px;
   margin-top: auto;
   margin-bottom: auto;
   text-align: center;
 }
 
-.navbar a {
+#navbar a {
   font-size: 20px;
 }
 
-.navbar-brand {
+#navbar .navbar-brand {
   padding: 0px;
 }
 
-.navbar-brand img {
+#navbar .navbar-brand img {
   height: 74px;
 }
 
@@ -191,28 +191,80 @@ body {
   left: 0;
 }
 
+#row2-aquatico {
+  position: relative;
+  height: 650px;
+}
+
+#texto-aquatico {
+  height: 150px;
+  padding: 15px;
+}
+
+#texto-aquatico p {
+  margin: 0;
+  padding: 0px;
+}
+
+#slideshowAquatico {
+  position: absolute;
+  height: 500px;
+  width: 100%;
+  padding: 0px;
+  bottom: 5px;
+}
+
+#carouselAquatico {
+  position: absolute;
+  height: 99%;
+  width: 99%;
+  margin: 0.5%;
+}
+
+#carousel-inner-Aquatico {
+  position: absolute;
+  height: 100%;
+  width: 100%;
+}
+
+#carousel-inner-Aquatico .carousel-item {
+  height: 100%;
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+
+
+
 @media(max-width:992px) {
   
-  .nav-item {
+  #navbar .navbar-brand img {
+    height: 44px;
+  }
+
+  #navbar .nav-item {
     width: 100%;
   }
 
   .pusher {
-    height: 90px;
+    height: 50px;
   }
 
   .row2 {
-    height: 700px;
+    height: 620px;
     border: 0.5px solid rgb(25,25,112);
   }
 
   .texto {
     padding: 10px;
-    height: 300px;
+    height: 220px;
+  }
+
+  .texto h1 {
+    font-size: 1.8em;
   }
 
   .texto p {
-    font-size: 1.5em;
+    font-size: 1.2em;
   }
 
   #carouselChales {
@@ -229,7 +281,25 @@ body {
     width: 99%;
   }
 
- 
+  #row2-aquatico {
+    height: 550px;
+  }
+
+  #texto-aquatico {
+    height: 150px;
+  }
+
+  #slideshowAquatico {
+    height: 400px;
+  }
+
+  #carouselAquatico {
+    position: absolute;
+    bottom: 0;
+    height: 400px;
+    width: 99%;
+  }
+
 
 
 }
@@ -238,12 +308,20 @@ body {
 
 @media(max-width:576px) {
 
-  .navbar-brand img {
-    height: 54px;
+  #navbar .navbar-brand img {
+    height: 40px;
+  }
+
+  #navbar .nav-item {
+    height: 2rem;
+  }
+
+  #navbar .navbar a {
+    font-size: 1em;
   }
 
   .pusher {
-    height: 60px;
+    height: 56px;
   }
 
   .row1 {
@@ -260,31 +338,31 @@ body {
   }
 
   .row2 {
-    height: 600px;
+    height: 500px;
     border: none;
   }
 
   #carouselChales {
     position: absolute;
     bottom: 0;
-    height: 400px;
+    height: 300px;
     width: 98%;
   } 
 
   #carouselCamping {
     position: absolute;
     bottom: 0;
-    height: 400px;
+    height: 300px;
     width: 98%;
   }
 
   .texto h1 {
-    font-size: 1.5em;
+    font-size: 1.4em;
   }
 
   .texto p {
-      font-size: 0.8em;
-      padding: 0px;
+    font-size: 1.1em;
+    padding: 0px;
   }
 
   .texto {
@@ -292,14 +370,46 @@ body {
     height: 200px;
   }
 
+  #row2-aquatico {
+    height: 530px;
+  }
+
+  #texto-aquatico {
+    height: 230px;
+  }
+
+  #slideshowAquatico {
+    height: 300px;
+  }
+
+  #carouselAquatico {
+    position: absolute;
+    bottom: 0;
+    height: 100%;
+    width: 99%;
+  }
+
 }
 
 
-@media(max-width:576px) {
-  .navbar-brand img {
-    height: 44px;
+@media(max-width:411px) {
+  
+  .row2 {
+    height: 600px;
   }
 
+  .texto {
+    padding: 10px;
+    height: 300px;
+  }
 
+  .texto p {
+    font-size: 1.1em;
+    padding: 0px;
+  }
+
+  #nav-tabs a {
+    font-size: 0.8em;
+  }
 
 }

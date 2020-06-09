@@ -5,12 +5,15 @@
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <title>TESTE</title>
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css" integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk" crossorigin="anonymous">
+
+
+
     <link rel="stylesheet" type="text/css" href="style.css" media="screen"/>
 </head>
 
 <body data-spy="scroll" data-target="#navbar-responsive">
 
-    <nav class="navbar navbar-expand-lg navbar-dark fixed-top">
+    <nav class="navbar navbar-expand-lg navbar-dark fixed-top" id="navbar">
         <a class="navbar-brand" href="#inicio-pusher">
             <img src="img/logo.png">
         </a>
@@ -30,7 +33,7 @@
                 </li>
 
                 <li class="nav-item">
-                    <a class="nav-link" href="#venturas-pusher">Parque de aventuras</a>
+                    <a class="nav-link" href="#aventuras-pusher">Parque de aventuras</a>
                 </li>
                 
                 <li class="nav-item">
@@ -140,7 +143,7 @@
                 </p>
             </div>
 
-            <div class="col-12 col-sm-12 col-md-12 col-lg-7 col-xl-7" id="slideshowCamping">            
+            <div class="col-12 col-sm-12 col-md-12 col-lg-7 col-xl-7" id="slideshowCamping">
                 <div id="carouselCamping" class="carousel slide" data-ride="carousel">
 
                     <ol class="carousel-indicators">
@@ -187,6 +190,49 @@
         <div class="row">
             <div class="col-12 row1">PARQUE AQUÁTICO</div>
         </div>
+        <div class="row row2" id="row2-aquatico">
+            <div class="col-12 texto" id="texto-aquatico">
+                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+                consequat.
+                </p>
+            </div>
+        
+
+            <div class="col-12" id="slideshowAquatico">
+                <div id="carouselAquatico" class="carousel slide" data-ride="carousel">
+
+                    <ol class="carousel-indicators">
+                        <li data-target="#carouselAquatico" data-slide-to="0" class="active"></li>
+                        <li data-target="#carouselAquatico" data-slide-to="1" class="active"></li>
+                        <li data-target="#carouselAquatico" data-slide-to="2" class="active"></li>
+                        <li data-target="#carouselAquatico" data-slide-to="3" class="active"></li>
+                    </ol>
+
+                    <div class="carousel-inner" id="carousel-inner-Aquatico">
+                        <div class="carousel-item active" style="background-image: url(img/hospedagens/chales/img1.JPG)">
+                        </div>
+                        <div class="carousel-item " style="background-image: url(img/hospedagens/chales/img2.JPG)">
+                        </div>
+                        <div class="carousel-item " style="background-image: url(img/hospedagens/chales/img3.JPG)">
+                        </div>
+                        <div class="carousel-item " style="background-image: url(img/hospedagens/chales/img4.JPG)">
+                        </div>
+                    </div>
+
+                    <a class="carousel-control-prev" href="#carouselAquatico" role="button" data-slide="prev">
+                        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                        <span class="sr-only">Anterior</span>
+                    </a>
+
+                    <a class="carousel-control-next" href="#carouselAquatico" role="button" data-slide="next">
+                        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                        <span class="sr-only">Próxima</span>
+                    </a>
+
+                </div>
+                
+            </div>
+        </div>
     </div>
 
     <div class="pusher" id="aventuras-pusher"></div>
@@ -194,6 +240,55 @@
         <div class="row">
             <div class="col-12 row1">PARQUE DE AVENTURAS</div>
         </div>
+
+        <div class="row">
+            <div class="col-12">
+                <ul class="nav nav-tabs" id="nav-tabs">
+                    <li class="nav-item">
+                        <a href="#tirolesa" class="nav-link active" role="tab" data-toggle="tab">Tirolesa</a>
+                    </li>
+
+                    <li class="nav-item">
+                        <a href="#pendulo" class="nav-link" role="tab" data-toggle="tab">Pêndulo</a>
+                    </li>
+
+                    <li class="nav-item">
+                        <a href="#arvorismo" class="nav-link" role="tab" data-toggle="tab">Arvorismo</a>
+                    </li>
+
+                    <li class="nav-item">
+                        <a href="#bicicletas" class="nav-link" role="tab" data-toggle="tab">Bicicletas</a>
+                    </li>
+
+                    <li class="nav-item">
+                        <a href="#pedalinho" class="nav-link" role="tab" data-toggle="tab">Pedalinho</a>
+                    </li>
+
+                    <li class="nav-item">
+                        <a href="#escalada" class="nav-link" role="tab" data-toggle="tab">Parede de escalada</a>
+                    </li>
+                    
+                    <li class="nav-item">
+                        <a href="#tiro" class="nav-link" role="tab" data-toggle="tab">Tiro ao alvo</a>
+                    </li>
+                   
+
+                </ul>
+
+                <div class="tab-content">
+                    <div role="tabpanel" class="tab-pane active" id="tirolesa"></div>
+                    <div role="tabpanel" class="tab-pane" id="pendulo"></div>
+                    <div role="tabpanel" class="tab-pane" id="escalada"></div>
+                    <div role="tabpanel" class="tab-pane" id="arvorismo"></div>
+                    <div role="tabpanel" class="tab-pane" id="tiro"></div>
+                    <div role="tabpanel" class="tab-pane" id="bicicletas"></div>
+                    <div role="tabpanel" class="tab-pane" id="pedalinho"></div>
+                    
+                </div>
+            </div>
+        </div>
+
+
     </div>
 
     <div class="pusher" id="Gastronomia-pusher"></div>
