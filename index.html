@@ -3,8 +3,9 @@
 <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <title>TESTE</title>
+    <title>THERMAS DE SULINA</title>
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css" integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk" crossorigin="anonymous">
+    <link href="https://fonts.googleapis.com/css2?family=Sriracha&display=swap" rel="stylesheet">
 
 
 
@@ -238,11 +239,98 @@
     <div class="pusher" id="aventuras-pusher"></div>
     <div class="container" id="Parque-de-aventuras">
         <div class="row">
-            <div class="col-12 row1">PARQUE DE AVENTURAS</div>
+            <div class="col-12 row1">Parque de aventuras</div>
         </div>
-
+        <div class="col-12 texto" id="texto-aventuras">
+            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+            consequat.
+            </p>
+        </div>
+        <!-- Grid row -->
         <div class="row">
-            <div class="col-12">
+
+            <!--
+            <div class="col-md-12 d-flex justify-content-center mb-5">
+
+                <button type="button" class="btn btn-outline-black waves-effect filter" data-rel="all">All</button>
+                <button type="button" class="btn btn-outline-black waves-effect filter" data-rel="1">Mountains</button>
+                <button type="button" class="btn btn-outline-black waves-effect filter" data-rel="2">Sea</button>
+
+            </div>
+             -->
+
+        </div>
+        <!-- Grid row -->
+
+        <!-- Grid row -->
+        <div class="gallery" id="gallery">
+
+            <!-- Grid column -->
+            <div class="mb-3 pics animation all 2">
+                <img class="img-fluid" src="https://mdbootstrap.com/img/Photos/Horizontal/Nature/4-col/img%20(73).jpg" alt="Card image cap">
+            </div>
+            <!-- Grid column -->
+
+            <!-- Grid column -->
+            <div class="mb-3 pics animation all 1">
+                <img class="img-fluid" src="https://mdbootstrap.com/img/Photos/Vertical/mountain1.jpg" alt="Card image cap">
+            </div>
+            <!-- Grid column -->
+
+            <!-- Grid column -->
+            <div class="mb-3 pics animation all 1">
+                <img class="img-fluid" src="https://mdbootstrap.com/img/Photos/Vertical/mountain2.jpg" alt="Card image cap">
+            </div>
+            <!-- Grid column -->
+
+            <!-- Grid column -->
+            <div class="mb-3 pics animation all 2">
+                <img class="img-fluid" src="https://mdbootstrap.com/img/Photos/Horizontal/Nature/4-col/img%20(35).jpg" alt="Card image cap">
+            </div>
+            <!-- Grid column -->
+
+            <!-- Grid column -->
+            <div class="mb-3 pics animation all 2">
+                <img class="img-fluid" src="https://mdbootstrap.com/img/Photos/Horizontal/Nature/4-col/img%20(18).jpg" alt="Card image cap">
+            </div>
+            <!-- Grid column -->
+
+            <!-- Grid column -->
+            <div class="mb-3 pics animation all 1">
+            <img class="img-fluid" src="https://mdbootstrap.com/img/Photos/Vertical/mountain3.jpg" alt="Card image cap">
+            </div>
+            <!-- Grid column -->
+
+        </div>
+        <!-- Grid row -->
+
+
+
+
+    
+    </div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+            <!--
+            <div class="col-12" id="nav-tabs">
                 <ul class="nav nav-tabs" id="nav-tabs">
                     <li class="nav-item">
                         <a href="#tirolesa" class="nav-link active" role="tab" data-toggle="tab">Tirolesa</a>
@@ -276,20 +364,36 @@
                 </ul>
 
                 <div class="tab-content">
-                    <div role="tabpanel" class="tab-pane active" id="tirolesa"></div>
-                    <div role="tabpanel" class="tab-pane" id="pendulo"></div>
-                    <div role="tabpanel" class="tab-pane" id="escalada"></div>
-                    <div role="tabpanel" class="tab-pane" id="arvorismo"></div>
-                    <div role="tabpanel" class="tab-pane" id="tiro"></div>
-                    <div role="tabpanel" class="tab-pane" id="bicicletas"></div>
-                    <div role="tabpanel" class="tab-pane" id="pedalinho"></div>
+                    <div role="tabpanel" class="tab-pane active" id="tirolesa">
+                        
+
+
+
+
+                    </div>
+
+                    <div role="tabpanel" class="tab-pane" id="pendulo">
+                    </div>
+
+                    <div role="tabpanel" class="tab-pane" id="escalada">
+                    </div>
+
+                    <div role="tabpanel" class="tab-pane" id="arvorismo">
+                    </div>
+
+                    <div role="tabpanel" class="tab-pane" id="tiro">
+                    </div>
+
+                    <div role="tabpanel" class="tab-pane" id="bicicletas">
+                    </div>
+
+                    <div role="tabpanel" class="tab-pane" id="pedalinho">
+                    </div>
                     
                 </div>
             </div>
-        </div>
-
-
-    </div>
+        -->
+        
 
     <div class="pusher" id="Gastronomia-pusher"></div>
     <div class="container" id="Gastronomia">
@@ -312,7 +416,19 @@
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js" integrity="sha384-OgVRvuATP1z7JjHLkuOU7Xw704+h835Lr+6QL9UvYjZE3Ipu6Tp75j7Bh/kR0JKI" crossorigin="anonymous"></script>
 
 
-    
+    <script type="text/javascript">$(function() {
+        var selectedClass = "";
+        $(".filter").click(function(){
+        selectedClass = $(this).attr("data-rel");
+        $("#gallery").fadeTo(100, 0.1);
+        $("#gallery div").not("."+selectedClass).fadeOut().removeClass('animation');
+        setTimeout(function() {
+        $("."+selectedClass).fadeIn().addClass('animation');
+        $("#gallery").fadeTo(300, 1);
+        }, 300);
+        });
+        });
+    </script>
 
 </body>
 </html>

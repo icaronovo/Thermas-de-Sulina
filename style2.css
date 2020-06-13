@@ -1,253 +1,519 @@
-@import url('https://fonts.googleapis.com/css?family=Poppins:400,500,600,700&display=swap');
-*{
-  user-select: none;
-  box-sizing: border-box;
-  font-family: 'Poppins', sans-serif;
+@import url('https://fonts.googleapis.com/css?family=Lato400,700');
+@import url('https://fonts.googleapis.com/css2?family=Sriracha&display=swap');
+
+html{
+  scroll-behavior: smooth;
 }
 
 body {
-  position: absolute;
-  margin: 0;
-  padding: 0;
-  width: 100%;
-}
-
-.btn{
-  z-index: 10;
-  position: absolute;
-  margin-top: 20px;
-  left: 0px;
-  height: 45px;
-  width: 45px;
-  text-align: center;
-  cursor: pointer;
-  transition: left 0.4s ease;
-}
-
-.btn.click{
-  left: 300px;
-}
-
-.btn span{
-  position: fixed;
-  padding: 0px 10px;
-  color: white;
-  font-size: 28px;
-  line-height: 45px;
-  background-color: rgb(25,25,112);
-}
-
-.btn.click span:before{
-  content: '\f00d';
-}
-
-.sidebar{
-  z-index: 10;
-  margin-top: 0px;
-  position: fixed;
-  width: 300px;
-  left: -300px;
-  background-color: rgb(25,25,112);
-  transition: left 0.4s ease;
-}
-
-.sidebar.show{
-  left: 0px;
-}
-
-.sidebar .text{
-  color: white;
-  font-size: 25px;
-  font-weight: 600;
-  line-height: 65px;
-  text-align: center;
-  background: rgb(25,25,112);
-  letter-spacing: 1px;
-}
-
-nav ul{
-  background: rgb(25,25,112);
+  overflow-x: hidden;
+  font-family: 'Lato', sans-serif;
+  background-image: linear-gradient(rgba(204, 230, 255, 0.7), rgba(204, 230, 255, 0.8)) , url(img/fundo2.jpg);
+  background-position: center 0;
+  background-repeat: no-repeat;
   height: 100%;
-  width: 100%;
-  list-style: none;
-  padding-inline-start: 10px;
-
+  background-size: cover;
+  background-attachment:fixed;
 }
 
-nav ul li{
-  line-height: 45px;
-  border-top: 1px solid rgba(255,255,255,0.1);
+#navbar {
+  background-color: rgb(0, 0, 77);
+  border-bottom: 0.5px solid white;
 }
 
-nav ul li:last-child{
-  border-bottom: 1px solid rgba(255,255,255,0.05);
+#navbar .navbar-nav {
+  vertical-align: middle;
 }
 
-nav ul li a{
-  position: relative;
+#navbar .nav-item {
+  width: 130px;
+}
+
+#navbar .nav-link {
+  height: 60px;
+  margin-top: auto;
+  margin-bottom: auto;
+  text-align: center;
+}
+
+#navbar a {
+  font-size: 20px;
+}
+
+#navbar .navbar-brand {
+  padding: 0px;
+}
+
+#navbar .navbar-brand img {
+  height: 74px;
+}
+
+.navbar-dark .navbar-nav .nav-link {
   color: white;
-  text-decoration: none;
-  font-size: 18px;
-  padding-left: 10px;
-  font-weight: 500;
-  display: block;
-  width: 100%;
-  border-left: 3px solid transparent;
 }
 
-nav ul li.active a{
+.navbar-dark .navbar-nav .nav-link.active,
+.navbar-dark .navbar-nav .nav-link:hover {
   color: cyan;
-  background: #181661);
-  border-left-color: cyan;
 }
 
-nav ul li a:hover{
-  color: cyan;
-  background: #181661;
-}
-
-nav ul ul{
-  position: static;
-  display: none;
-}
-
-nav ul .feat-show.show{
+#Inicio {
   display: block;
-}
-
-nav ul .serv-show.show1{
-  display: block;
-}
-
-nav ul ul li{
-  line-height: 42px;
-  border-top: none;
-}
-
-nav ul ul li a{
-  font-size: 17px;
-  color: #e6e6e6;
-}
-
-nav ul li.active ul li a{
-  color: #e6e6e6;
-  border-left-color: transparent;
-}
-
-nav ul ul li a:hover{
-  color: cyan!important;
-  background: #181661 !important;
-}
-
-nav ul li a span{
-  position: absolute;
-  top: 50%;
-  right: 20px;
-  transform: translateY(-50%);
-  font-size: 22px;
-  transition: transform 0.4s;
-}
-
-nav ul li a span.rotate{
-  transform: translateY(-50%) rotate(-180deg);
-}
-
-.container-fluid {
-  padding: 0 !important;
-  margin-right:auto;
-  margin-left:auto
-}
-
-.navbar {
+  margin-top: -4px;
+  height:89vh;
   position: relative;
-  height: 100px;
-  background-color: #181661;
 }
 
-.navbar-inner {
-  position: absolute;
-  right: 0%;
-}
-
-.brand img {
-  height: 92px;
-  top: 4%;
-}
-
-.inicio {
-  z-index: -9;
-  border: 0;
-  padding: 0;
-  width: 100%;
-  display: block;
-}
-
-.hero {
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    z-index: 3;
-    color: #fff;
-    text-align: center;
-    text-transform: uppercase;
-    text-shadow: 1px 1px 0 rgba(0,0,0,.75);
-      -webkit-transform: translate3d(-50%,-50%,0);
-         -moz-transform: translate3d(-50%,-50%,0);
-          -ms-transform: translate3d(-50%,-50%,0);
-           -o-transform: translate3d(-50%,-50%,0);
-              transform: translate3d(-50%,-50%,0);
-}
-
-.hero h1 {
-    font-size: 6em;    
-    font-weight: bold;
-    margin: 0;
-    padding: 0;
-}
-
-#inicio {
-  position: relative;
-  width: 100%;
-}
-
-.carousel {
-  position: absolute;
-  height: 100%
-}
-
-.carousel-inner {
+#Inicio .carousel-inner {
   position: absolute;
   height: 100%;
-  max-height: 800px;
 }
 
-.carousel-item img {
-  z-index: -10;
-  max-height: 100%;
-  filter: blur(2px);
+#Inicio .carousel-inner .carousel-item {
+  position: absolute;
+  background-repeat: no-repeat;
+  height: 100%;
+  background-size: cover;
 }
 
-.titulo {
-  margin-top: 60px;
-  text-align: right;
-  background-color: rgb(25,25,112);
+#Inicio .carousel-caption {
+  bottom: 0;
+  left: 0;
+  z-index:10;
+  width: 100%;
+  color:#fff;
+  display: table;
+  height:100%;
+  text-align:center;
+  display:table;
+  padding: 0px;
+}
+
+#Inicio .carousel-caption h1 {
+  font-weight: bold;
+  font-size: 4rem;
+  margin:0;
+  padding:0;
+  vertical-align:middle; /*middle centred*/
+  display:table-cell;
+}
+
+.carousel-control-prev {
+  z-index: 11;
+}
+
+.carousel-control-next {
+  z-index: 11;
+}
+
+.pusher {
+  height: 95px;
+}
+
+.row1 {
+  background-color: rgb(0, 0, 77);
   color: white;
   font-weight: bold;
   height: 60px;
   line-height: 60px;
-  vertical-align: middle;
   font-size: 35px;
   padding-right: 30px;
+  text-align: right;
 }
 
-.texto {
-  width: 50%;
+.row2 {
+  height: 400px;
+  background-color: #dcdcdc;
+  position: relative;
+  margin-bottom: 5px;
+}
+
+.texto h1 {
+  text-align: center;
+  padding-top: 10px;
+}
+
+.texto p {
+  padding: 5px 15px;
   text-align: justify;
-  font-size: 24px;
+  font-size: 20px;
+}
+
+#slideshowChales {
+  padding: 0px;
+}
+
+#carouselChales {
+  position: absolute;
+  height: 99%;
+  width: 99%;
+  margin: 0.5%;
+}
+
+#carousel-inner-Chales {
+  position: absolute;
+  height: 100%;
+  width: 100%;
+}
+
+#carousel-inner-Chales .carousel-item {
+  height: 100%;
+  background-position: center;
+  background-size: contain;
+  background-repeat: no-repeat;
+}
+
+#row2-camping {
+  position: relative;
+}
+
+#slideshowCamping {
+  position: absolute;
+  height: 100%;
+  padding: 0px;
+}
+
+#carouselCamping {
+  position: absolute;
+  height: 99%;
+  width: 99%;
+  margin: 0.5%;
+}
+
+#carousel-inner-Camping {
+  position: absolute;
+  height: 100%;
+  width: 100%;
+}
+
+#carousel-inner-Camping .carousel-item {
+  height: 100%;
+  background-position: bottom;
+  background-size: contain;
+  background-repeat: no-repeat;
+}
+
+#texto-camping {
+  position: absolute;
+  right: 0px;
+}
+
+#slideshowCamping {
+  position: absolute;
+  left: 0;
+}
+
+#row2-aquatico {
+  position: relative;
+  height: 800px;
+}
+
+#texto-aquatico {
+  height: 150px;
+  padding: 15px;
+}
+
+#texto-aquatico p {
+  margin: 0;
+  padding: 0px;
+}
+
+#slideshowAquatico {
+  position: absolute;
+  height: 650px;
+  width: 100%;
+  padding: 0px;
+  bottom: 5px;
+}
+
+#carouselAquatico {
+  position: absolute;
+  height: 99%;
+  width: 99%;
+  margin: 0.5%;
+}
+
+#carousel-inner-Aquatico {
+  position: absolute;
+  height: 100%;
+  width: 100%;
+}
+
+#carousel-inner-Aquatico .carousel-item {
+  height: 100%;
+  background-position: bottom;
+  background-size: contain;
+  background-repeat: no-repeat;
+}
+
+#nav-tabs {
+  padding: 0;
+}
+
+.nav-tabs {
+  background-color: #dcdcdc;
+}
+
+.nav .nav-link {
+  background-color: #c7c7c7;
+  text-decoration: none;
+  color: black;
+}
+
+.tab-pane {
+  height: 300px;
+  background-color: #c7c7c7;
+}
+
+#Parque-de-aventuras .row1 {
+  font-family: 'Sriracha', cursive;
+}
+
+footer {
+  background-color: rgb(0, 0, 77);
+  height: 200px;
+  border-top: 0.5px solid white;
 }
 
 
 
+@media(max-width:2000px) {
+
+  #row2-aquatico {
+    height: 850px;
+  }
+
+  #slideshowAquatico {
+    height: 700px;
+  }
+
+}
+
+
+@media(max-width:992px) {
+  
+  #navbar .navbar-brand img {
+    height: 44px;
+  }
+
+  #navbar .nav-item {
+    width: 100%;
+  }
+
+  .pusher {
+    height: 50px;
+  }
+
+  .row2 {
+    height: 620px;
+  }
+
+  .texto {
+    padding: 10px;
+    height: 220px;
+  }
+
+  .texto h1 {
+    font-size: 1.8em;
+  }
+
+  .texto p {
+    font-size: 1.2em;
+  }
+
+  #carouselChales {
+    position: absolute;
+    bottom: 0;
+    height: 300px;
+    width: 90%;
+    margin: 5px 5%;
+  }
+
+  #carouselCamping {
+    position: absolute;
+    bottom: 0;
+    height: 300px;
+    width: 90%;
+    margin: 5px 5%;
+  }
+
+  #row2-aquatico {
+    height: 450px;
+  }
+
+  #texto-aquatico {
+    height: 150px;
+  }
+
+  #slideshowAquatico {
+    height: 300px;
+    margin: 0 5%;
+  }
+
+  #carouselAquatico {
+    position: absolute;
+    bottom: 0;
+    height: 300px;
+    width: 90%;
+  }
+
+  #texto-aventuras {
+    height: 200px;
+  }
+
+}
 
 
 
+@media(max-width:576px) {
+
+  #Inicio {
+    height:59vh;
+  }
+
+  #Inicio .carousel-caption h1 {
+    vertical-align: middle;
+    line-height: 2rem;
+    font-size: 2rem;
+  }
+
+  #navbar .navbar-brand img {
+    height: 40px;
+  }
+
+  #navbar .nav-item {
+    height: 2rem;
+  }
+
+  #navbar .navbar a {
+    font-size: 1em;
+  }
+
+  .pusher {
+    height: 56px;
+  }
+
+  .row1 {
+    background-color: rgb(0, 0, 77);
+    color: white;
+    font-weight: bold;
+    height: 40px;
+    line-height: 35px;
+    padding-top: 2.5px;
+    font-size: 1.2em;
+    padding-right: 0px;
+    text-align: left;
+    border-bottom: solid 0.5px white;
+  }
+
+  .row2 {
+    height: 500px;
+    border: none;
+  }
+
+  #carouselChales {
+    position: absolute;
+    bottom: 0;
+    height: 280px;
+    width: 90%;
+    margin: 5px 5%;
+  } 
+
+  #carouselCamping {
+    position: absolute;
+    bottom: 0;
+    height: 280px;
+    width: 90%;
+    margin: 5px 5%;
+  }
+
+  .texto h1 {
+    font-size: 1.4em;
+  }
+
+  .texto p {
+    font-size: 1.1em;
+    padding: 0px;
+  }
+
+  .texto {
+    padding: 10px;
+    height: 200px;
+  }
+
+  #row2-aquatico {
+    height: 530px;
+  }
+
+  #texto-aquatico {
+    height: 230px;
+  }
+
+  #slideshowAquatico {
+    height: 280px;
+    width: 90%;
+    margin: 5px 5%;
+  }
+
+  #carouselAquatico {
+    position: absolute;
+    bottom: 0;
+    height: 100%;
+    width: 99%;
+  }
+
+}
+
+
+@media(max-width:411px) {
+  
+  .row2 {
+    height: 600px;
+  }
+
+  .texto {
+    padding: 10px;
+    height: 300px;
+  }
+
+  .texto p {
+    font-size: 1.1em;
+    padding: 0px;
+  }
+
+  #nav-tabs a {
+    font-size: 0.8em;
+  }
+
+}
+
+.gallery {
+  -webkit-column-count: 3;
+  -moz-column-count: 3;
+  column-count: 3;
+  -webkit-column-width: 33%;
+  -moz-column-width: 33%;
+  column-width: 33%; }
+  .gallery .pics {
+  -webkit-transition: all 350ms ease;
+  transition: all 350ms ease; }
+  .gallery .animation {
+  -webkit-transform: scale(1);
+  -ms-transform: scale(1);
+  transform: scale(1);
+}
+
+@media (max-width: 450px) {
+
+  .gallery {
+    -webkit-column-count: 1;
+    -moz-column-count: 1;
+    column-count: 1;
+    -webkit-column-width: 100%;
+    -moz-column-width: 100%;
+    column-width: 100%;
+    margin-top: -20px;
+  }
+
+
+}

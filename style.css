@@ -1,4 +1,5 @@
 @import url('https://fonts.googleapis.com/css?family=Lato400,700');
+@import url('https://fonts.googleapis.com/css2?family=Sriracha&display=swap');
 
 html{
   scroll-behavior: smooth;
@@ -16,7 +17,7 @@ body {
 }
 
 #navbar {
-  background-color: rgb(0, 0, 102);
+  background-color: rgb(25,25,112);
   border-bottom: 0.5px solid white;
 }
 
@@ -233,6 +234,29 @@ body {
   background-repeat: no-repeat;
 }
 
+#nav-tabs {
+  padding: 0;
+}
+
+.nav-tabs {
+  background-color: #dcdcdc;
+}
+
+.nav .nav-link {
+  background-color: #c7c7c7;
+  text-decoration: none;
+  color: black;
+}
+
+.tab-pane {
+  height: 300px;
+  background-color: #c7c7c7;
+}
+
+#Parque-de-aventuras .row1 {
+  font-family: 'Sriracha', cursive;
+}
+
 
 
 @media(max-width:992px) {
@@ -270,19 +294,21 @@ body {
   #carouselChales {
     position: absolute;
     bottom: 0;
-    height: 400px;
-    width: 99%;
+    height: 300px;
+    width: 90%;
+    margin: 5px 5%;
   }
 
   #carouselCamping {
     position: absolute;
     bottom: 0;
-    height: 400px;
-    width: 99%;
+    height: 300px;
+    width: 90%;
+    margin: 5px 5%;
   }
 
   #row2-aquatico {
-    height: 550px;
+    height: 450px;
   }
 
   #texto-aquatico {
@@ -290,17 +316,20 @@ body {
   }
 
   #slideshowAquatico {
-    height: 400px;
+    height: 300px;
+    margin: 0 5%;
   }
 
   #carouselAquatico {
     position: absolute;
     bottom: 0;
-    height: 400px;
-    width: 99%;
+    height: 300px;
+    width: 90%;
   }
 
-
+  #texto-aventuras {
+    height: 200px;
+  }
 
 }
 
@@ -345,15 +374,17 @@ body {
   #carouselChales {
     position: absolute;
     bottom: 0;
-    height: 300px;
-    width: 98%;
+    height: 280px;
+    width: 90%;
+    margin: 5px 5%;
   } 
 
   #carouselCamping {
     position: absolute;
     bottom: 0;
-    height: 300px;
-    width: 98%;
+    height: 280px;
+    width: 90%;
+    margin: 5px 5%;
   }
 
   .texto h1 {
@@ -379,7 +410,9 @@ body {
   }
 
   #slideshowAquatico {
-    height: 300px;
+    height: 280px;
+    width: 90%;
+    margin: 5px 5%;
   }
 
   #carouselAquatico {
@@ -411,5 +444,46 @@ body {
   #nav-tabs a {
     font-size: 0.8em;
   }
+
+}
+
+.gallery {
+  -webkit-column-count: 3;
+  -moz-column-count: 3;
+  column-count: 3;
+  -webkit-column-width: 33%;
+  -moz-column-width: 33%;
+  column-width: 33%; }
+  .gallery .pics {
+  -webkit-transition: all 350ms ease;
+  transition: all 350ms ease; }
+  .gallery .animation {
+  -webkit-transform: scale(1);
+  -ms-transform: scale(1);
+  transform: scale(1);
+}
+
+@media (max-width: 450px) {
+
+  .gallery {
+    -webkit-column-count: 1;
+    -moz-column-count: 1;
+    column-count: 1;
+    -webkit-column-width: 100%;
+    -moz-column-width: 100%;
+    column-width: 100%;
+    margin-top: -20px;
+  }
+
+
+}
+
+@media (max-width: 400px) {
+
+  .btn.filter {
+    padding-left: 1.1rem;
+    padding-right: 1.1rem;
+  }
+
 
 }
