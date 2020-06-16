@@ -3,11 +3,9 @@
 <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <title>TESTE</title>
+    <title>THERMAS DE SULINA</title>
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css" integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk" crossorigin="anonymous">
     <link href="https://fonts.googleapis.com/css2?family=Sriracha&display=swap" rel="stylesheet">
-
-
 
     <link rel="stylesheet" type="text/css" href="style2.css" media="screen"/>
 </head>
@@ -15,7 +13,7 @@
 <body data-spy="scroll" data-target="#navbar-responsive">
 
     <nav class="navbar navbar-expand-lg navbar-dark fixed-top" id="navbar">
-        <a class="navbar-brand" href="#inicio-pusher">
+        <a class="navbar-brand" href="#inicio">
             <img src="img/logo.png">
         </a>
         <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarResponsive">
@@ -26,7 +24,7 @@
             <ul class="navbar-nav ml-auto justify-content-between align-items-center">
 
                 <li class="nav-item" id="nav-item-Chales">
-                    <a class="nav-link" href="#Chales-pusher">Hospedagens</a>
+                    <a class="nav-link" href="#hospedagens">Hospedagens</a>
                 </li>
 
                 <li class="nav-item">
@@ -42,34 +40,47 @@
                 </li>
 
                 <li class="nav-item">
-                    <a class="nav-link" href="#Contato-pusher">Contato</a>
+                    <a class="nav-link" href="#Contato">Contato</a>
                 </li>
             </ul>
         </div>
     </nav>
 
-    <div class="pusher" id="inicio-pusher"></div>
+    <div class="pusher" id="inicio"></div>
 
     <div id="Inicio" class="carousel slide" data-ride="carousel">
-    
+        <!--
         <ol class="carousel-indicators">
             <li data-target="#Inicio" data-slide-to="0" class="active"></li>
             <li data-target="#Inicio" data-slide-to="1" class="active"></li>
             <li data-target="#Inicio" data-slide-to="2" class="active"></li>
             <li data-target="#Inicio" data-slide-to="3" class="active"></li>
         </ol>
+        -->
+
+        <div>
+            <a href="#hospedagens">
+                <img src="img/seta.gif" alt="" id="seta">
+            </a>
+        </div>
+        <div>
+            <img src="img/saudacao.png" alt="" id="saudacao">
+        </div>
 
         <div class="carousel-inner">
-            <div class="carousel-item active" style="background-image: url(img/inicio/img1.jpg); background-position: bottom;"></div>
+            <div class="carousel-item active" style="background-image: url(img/inicio/img6.jpeg); background-position: bottom;"></div>
             <div class="carousel-item" style="background-image: url(img/inicio/img2.jpg); background-position: bottom;"></div>
             <div class="carousel-item" style="background-image: url(img/inicio/img4.jpeg); background-position: center;"></div>
             <div class="carousel-item" style="background-image: url(img/inicio/img5.jpg); background-position: center;"></div>
         </div>
 
+        <!--
         <div class="carousel-caption">
-            <h1>Sejam bem vindos ao Thermas de Sulina!</h1>
+            <h1>Bem vindos ao<br>Thermas de Sulina!</h1>
         </div>
+        -->
         
+
         <a class="carousel-control-prev" href="#Inicio" role="button" data-slide="prev">
             <span class="carousel-control-prev-icon" aria-hidden="true"></span>
             <span class="sr-only">Anterior</span>
@@ -82,18 +93,18 @@
         
     </div>
 
-    <div class="pusher" id="Chales-pusher"></div>
+    <div class="pusher" id="hospedagens"></div>
 
-    <div class="container" id="Chales">
+    <div class="container" id="hospedagens-container">
         <div class="row">
             <div class="col-12 row1">Hospedagens</div>
         </div>
 
-        <div class="row row2">
+        <div class="row row2" id="row2-chales">
             <div class="col-12 col-sm-12 col-md-12 col-lg-5 col-xl-5 texto">
-                <h1>CHALÉS</h1>
-                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
-                consequat.
+                <h1>Chalés</h1>
+                <p>
+                    Nossos chalés fornecem todo o suporte necessário para a sua estadia no Thermas de Sulina, acomodando confortavelmente 8 pessoas, possuindo dois quartos de casal com ar condicionado, e um quarto de solteiro com duas beliches. Contam também com dois banheiros, sendo um social e outro com banheira de hidromassagem. A cozinha contém geladeira, fogão e microondas, além de utensílios como panelas, copos, pratos e talheres. Cada chalé possui também a sua própria varanda com churrasqueira.
                 </p>
             </div>
 
@@ -150,11 +161,6 @@
                         </div>
                         <div class="carousel-item " style="background-image: url(img/hospedagens/chales/14.jpeg)">
                         </div>
-
-
-
-
-
                     </div>
 
                     <a class="carousel-control-prev" href="#carouselChales" role="button" data-slide="prev">
@@ -169,16 +175,13 @@
 
                 </div>
             </div>
-
-
         </div>
 
 
         <div class="row row2" id="row2-camping">
             <div class="col-12 col-sm-12 col-md-12 col-lg-5 col-xl-5 texto" id="texto-camping">
                 <h1>CAMPING E MOTORHOME</h1>
-                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
-                consequat.
+                <p>Nosso camping possui estrutura completa para atender tanto a quem vem acampar, quanto a quem vem de motorhome. Há diversas tomadas dispostas pela área, de modo a suprir o maior número de pessoas possível. Possui também banheiros e chuveiros exclusivos para quem está hospedado ali, além de contar com churrasqueiras disponíveis para livre utilização.
                 </p>
             </div>
 
@@ -224,12 +227,11 @@
     <div class="pusher" id="aquatico-pusher"></div>
     <div class="container" id="Parque-aquatico">
         <div class="row">
-            <div class="col-12 row1">PARQUE AQUÁTICO</div>
+            <div class="col-12 row1">Parque aquático</div>
         </div>
         <div class="row row2" id="row2-aquatico">
             <div class="col-12 texto" id="texto-aquatico">
-                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
-                consequat.
+                <p>Nosso parque aquático conta com 6 piscinas descobretas e uma piscina coberta, sendo todas elas abastecidas com água termal aquecida naturalmente a uma média de 38°C. Possui também dois toboáguas, além de jacuzzis para quem busca um momento para relaxar.
                 </p>
             </div>
         
@@ -307,83 +309,80 @@
         </div>
 
         <div class="row">
-            <!-- Grid row -->
+            
             <div class="gallery" id="gallery">
 
-                <!-- Grid column -->
                 <div class="mb-3 pics animation all 2">
                     <img class="img-fluid" src="img/Aventuras/img1.jpg" alt="Card image cap">
                 </div>
-                <!-- Grid column -->
 
-                <!-- Grid column -->
                 <div class="mb-3 pics animation all 1">
                     <img class="img-fluid" src="img/Aventuras/img2.jpg">
                 </div>
-                <!-- Grid column -->
 
-                <!-- Grid column -->
-                <div class="mb-3 pics animation all 1">
-                    <img class="img-fluid" src="img/Aventuras/img3.jpg">
-                </div>
-                <!-- Grid column -->
-
-                <!-- Grid column -->
                 <div class="mb-3 pics animation all 2">
                     <img class="img-fluid" src="img/Aventuras/img4.jpg" alt="Card image cap">
                 </div>
-                <!-- Grid column -->
 
-                <!-- Grid column -->
                 <div class="mb-3 pics animation all 2">
                     <img class="img-fluid" src="img/Aventuras/img5.jpg" alt="Card image cap">
                 </div>
-                <!-- Grid column -->
 
-                <!-- Grid column -->
                 <div class="mb-3 pics animation all 1">
-                <img class="img-fluid" src="img/Aventuras/img6.jpg">
+                    <img class="img-fluid" src="img/Aventuras/img6.jpg">
                 </div>
-                <!-- Grid column -->
 
-                <!-- Grid column -->
                 <div class="mb-3 pics animation all 1">
-                <img class="img-fluid" src="img/Aventuras/img7.jpg">
+                    <img class="img-fluid" src="img/Aventuras/img8.jpg">
                 </div>
-                <!-- Grid column -->
 
-                <!-- Grid column -->
                 <div class="mb-3 pics animation all 1">
-                <img class="img-fluid" src="img/Aventuras/img8.jpg">
+                    <img class="img-fluid" src="img/Aventuras/img9.jpeg">
                 </div>
-                <!-- Grid column -->
+
+                <div class="mb-3 pics animation all 1">
+                    <img class="img-fluid" src="img/Aventuras/img10.jpeg">
+                </div>
+
+                <div class="mb-3 pics animation all 1">
+                    <img class="img-fluid" src="img/Aventuras/img11.jpeg">
+                </div>
+
+                <div class="mb-3 pics animation all 1">
+                    <img class="img-fluid" src="img/Aventuras/img12.jpeg">
+                </div>
 
             </div>
-            <!-- Grid row -->
         </div>
     </div>
 
     <div class="pusher" id="Gastronomia-pusher"></div>
+    <!--
     <div class="container" id="Gastronomia">
         <div class="row">
-            <div class="col-12 row1">GASTRONOMIA</div>
+            <div class="col-12 row1">Gastronomia</div>
         </div>
     </div>
 
     <div class="pusher" id="Contato-pusher"></div>
 
+
+
+
     <div class="container-fluid" id="footer">
-        <div class="row justify-content-center" id="footer-row">
-            <div class="col-4" id="reservas">
-                <p id="reservas-p">Para a realização de reservas, entre em contato através do nosso WhatsApp:<br>
-                    <a id="reservas-link" href="https://api.whatsapp.com/send?phone=5546999301111">(46) 99930-1111</a>
+        <div class="row justify-content-center h-100" id="footer-row">
+            <div class="col-4" id="reservas-col" style="background-color: green;">
+                <p id="reservas-p">Reservas:<br>reservas@thermasdesulina.com.br<br>(46) 99930-1111<br>
+                    <a id="reservas-link" href="https://api.whatsapp.com/send?phone=5546999301111"><img src="img/whatsapp.png" alt="WhatsApp" style="height: 50px;"></a>
                 </p>
             </div>
 
-            <div class="col-4">
-                <p></p>
+
+
+            <div class="col-4" id="midias-col" style="background-color: red;">
             </div>
-            <div class="col-4" id="mapa-col">
+
+            <div class="col-4" id="mapa-col" style="background-color: yellowgreen;">
                 <div id="mapa">
                     <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3595.977573006322!2d-52.70843304884154!3d-25.672038148704782!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x94f0276234d445a3%3A0xa6ed12d986c91762!2sThermas%20de%20Sulina!5e0!3m2!1spt-BR!2sbr!4v1592234115388!5m2!1spt-BR!2sbr" frameborder="0" style="border:0;" allowfullscreen="" aria-hidden="false" tabindex="0"></iframe>
                 </div>
@@ -392,9 +391,59 @@
                     <a href="https://goo.gl/maps/SLbUK4xMAmgGsy396">Abrir no google maps</a>
                 </div>
             </div>
+
+
+        </div>
+    </div>
+-->
+
+
+    <div class="pusher" id="Contato"></div>
+    <footer class="page-footer font-small pt-4">
+        <div class="container-fluid text-center text-md-left" style="padding: 0;">
+    
+            <div class="row">
+                <div class="col-md-4 mt-md-0 mt-3" id="reservas">
+                    <p>Para mais informações e reservas, entre em contato através do WhatsApp (46) 99930-1111 clicando no ícone abaixo:<br>
+                        <a href="https://api.whatsapp.com/send?phone=5546999301111">
+                            <img src="img/whatsapp.png" alt="WhatsApp" class="logo">
+                        </a>
+                    </p>
+        
+                </div>
+
+                <div class="col-md-5 mb-md-0 mb-3" id="media">
+                    <p id="medias-p">Siga-nos nas redes sociais:</p>
+                    <div id="logos">
+                        <a href=""><img src="img/facebook.png" alt="Facebook" class="logo"></a>
+                        
+                        <a href=""><img src="img/instagram.png" alt="Instagram" class="logo"></a>
+                    </div>
+                    
+
+                </div>
+
+                <div class="col-md-3 mb-md-0 mb-3" id="mapa-div">
+                    <div id="mapa">
+                        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3595.977573006322!2d-52.70843304884154!3d-25.672038148704782!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x94f0276234d445a3%3A0xa6ed12d986c91762!2sThermas%20de%20Sulina!5e0!3m2!1spt-BR!2sbr!4v1592234115388!5m2!1spt-BR!2sbr" frameborder="0" style="border:0;" allowfullscreen="" aria-hidden="false" tabindex="0">
+                        </iframe>
+                    </div>
+                </div>
+            </div>
         </div>
 
-    </div>
+        <div class="footer-copyright text-center py-5">Desenvolvido por
+            <a href="https://github.com/icaronovo/"> Ícaro Novo de Oliveira</a>
+        </div>
+    </footer>
+
+
+
+
+
+
+
+
 
     <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
     <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
