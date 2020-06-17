@@ -15,6 +15,8 @@ body {
   background-attachment: fixed;
 }
 
+
+
 #navbar {
   background-color: #191970;
   border-bottom: 0.5px solid white;
@@ -148,6 +150,7 @@ body {
 
 #row2-chales {
   position: relative;
+  height: 700px;
 }
 
 #slideshowChales {
@@ -215,24 +218,16 @@ body {
   right: 0px;
 }
 
-#row2-aquatico {
-  position: relative;
-  height: 650px;
-}
-
 #texto-aquatico {
   height: 150px;
   padding: 15px;
 }
 
-#texto-aquatico p {
-  margin: 0;
-  padding: 0px;
-}
 
 #slideshowAquatico {
   position: absolute;
-  height: 500px;
+  background-color: rgba(209, 207, 207, 0.8);
+  height: 430px;
   width: 100%;
   padding: 0px;
   bottom: 5px;
@@ -268,48 +263,6 @@ body {
   background-color: rgba(220, 220, 220, 0.8);
 }
 
-
-/*
-#footer {
-  padding: 0;
-  position: relative;
-  height: 250px;
-  background-color: rgb(25,25,112);
-  color: white;
-}
-
-#reservas-col {
-  font-size: 1.3rem;
-  text-align: center;
-  margin: 0px;
-  padding: 0px;
-}
-
-#reservas-link {
-  color: white;
-  text-decoration: none;
-}
-
-#midias-col {
-  padding: 0;
-}
-
-#mapa-col {
-  position: relative;
-}
-
-iframe {
-  position: absolute;
-  width: 100%;
-  height: 100%;
-  padding: 4%;
-}
-
-#mapa-link {
-  display: none;
-}
-*/
-
 footer .row {
   background-color: rgb(25,25,112);
   color: white;
@@ -336,14 +289,18 @@ footer .row {
 }
 
 #media {
-  height: 100px;
+  height: 200px;
+  margin: 0px;
+  padding: 0px;
+  padding: 10px;
 }
 
 #logos {
-  position: absolute;
-  bottom: 0px;
-  left: 50%;
-  transform: translateX(-50%);
+  text-align: center;
+}
+
+#logos a {
+  display: inline-block;
 }
 
 .logo {
@@ -355,7 +312,16 @@ footer .row {
   padding-top: 10px;
   text-align: center;
   font-size: 1.1rem;
-  font-weight: bold;
+  margin: 0px;
+  padding: 0px;
+}
+
+#endereco-p {
+  padding-top: 10px;
+  text-align: center;
+  font-size: 1.1rem;
+  margin: 0px;
+  padding: 0px;
 }
 
 #mapa-div {
@@ -380,9 +346,9 @@ iframe {
 
 .footer-copyright {
   padding: 3px !important;
-  height: 25px;
+  height: 20px;
   color: white;
-  font-size: 0.85rem;
+  font-size: 0.7rem;
   background-color: rgb(16, 16, 75);
 }
 
@@ -476,18 +442,17 @@ iframe {
 
 @media(max-width:768px) {
 
-
-
-  #texto-aquatico {
-    height: 180px;
-  }
-
   #saudacao {
     bottom: 50px;
   }
 
   footer .row {
     height: 475px;
+  }
+
+  #media {
+    margin-bottom: 0 !important;
+    height: 150px;
   }
 
   #mapa-div {
@@ -538,7 +503,7 @@ iframe {
   }
 
   .row2 {
-    height: 670px;
+    height: 620px;
     border: none;
   }
 
@@ -573,8 +538,7 @@ iframe {
   }
 
   #row2-aquatico {
-    height: 530px;
-    margin: 0px;
+    height: 550px;
   }
 
   #texto-aquatico {
@@ -593,6 +557,13 @@ iframe {
     width: 99%;
   }
   
+  footer .row {
+    height: 500px;
+  }
+
+  #endereco-p {
+    font-size: 0.9rem;
+  }
 
 }
 
@@ -617,16 +588,24 @@ iframe {
     font-size: 0.8em;
   }
 
+  #row2-chales {
+    height: 750px;
+  }
+
   #row2-camping {
-    height: 700px;
+    height: 650px;
+  }
+
+  #medias-p {
+    font-size: 1rem;
   }
 
   #reservas p {
     font-size: 0.9rem;
   }
 
-  #whatsapp {
-    height: 30px;
+  .logo {
+    height: 50px;
   }
 
 }
