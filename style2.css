@@ -15,10 +15,8 @@ body {
   background-attachment: fixed;
 }
 
-
-
 #navbar {
-  background-color: #191970;
+  background-color:  #000061;
   border-bottom: 0.5px solid white;
 }
 
@@ -43,7 +41,7 @@ body {
 }
 
 #navbar .navbar-brand img {
-  height: 74px;
+  height: 8vh;
 }
 
 .navbar-dark .navbar-nav .nav-link {
@@ -58,7 +56,7 @@ body {
 #Inicio {
   display: block;
   margin-top: -4px;
-  height:89vh;
+  height:90vh;
   position: relative;
 }
 
@@ -73,7 +71,7 @@ body {
 #seta {
   position: absolute;
   height: 40px;
-  bottom: 5px;
+  bottom: 10px;
   z-index: 10;
   left: 50%;
   transform: translateX(-50%);
@@ -118,7 +116,7 @@ body {
 }
 
 .row1 {
-  background-color: rgb(25,25,112);
+  background-color:  #000061;
   color: white;
   font-family: 'Architects Daughter', cursive;
   font-weight: bold;
@@ -130,10 +128,8 @@ body {
 }
 
 .row2 {
-  height: 550px;
   background-color: rgba(220, 220, 220, 0.8);
-  position: relative;
-  margin-bottom: 5px;
+  margin-bottom: 10px;
 }
 
 .texto h1 {
@@ -143,7 +139,6 @@ body {
 }
 
 .texto p {
-  padding: 5px 15px;
   text-align: justify;
   font-size: 20px;
 }
@@ -151,6 +146,18 @@ body {
 #row2-chales {
   position: relative;
   height: 700px;
+}
+
+.icones {
+  position: relative;
+  height: 150px;
+}
+
+.icones2 {
+  position: absolute;
+  height: 100%;
+  left: 50%;
+  transform: translateX(-50%);
 }
 
 #slideshowChales {
@@ -165,7 +172,7 @@ body {
   position: absolute;
   height: 99%;
   width: 99%;
-  margin: 0.5%;
+  padding: 0.5%;
 }
 
 #carousel-inner-Chales {
@@ -181,175 +188,10 @@ body {
   background-position: center;
 }
 
-#row2-camping {
-  position: relative;
-  height: 570px;
-}
-
-#slideshowCamping {
-  position: absolute;
-  background-color: rgba(209, 207, 207, 0.8);
-  height: 100%;
-  padding: 0px;
-  left: 0px;
-}
-
-#carouselCamping {
-  position: absolute;
-  height: 99%;
-  width: 99%;
-  margin: 0.5%;
-}
-
-#carousel-inner-Camping {
-  position: absolute;
-  height: 100%;
-  width: 100%;
-}
-
-#carousel-inner-Camping .carousel-item {
-  height: 100%;
-  background-size: cover;
-  background-repeat: no-repeat;
-}
-
-#texto-camping {
-  position: absolute;
-  right: 0px;
-}
-
-#texto-aquatico {
-  height: 150px;
-  padding: 15px;
-}
-
-
-#slideshowAquatico {
-  position: absolute;
-  background-color: rgba(209, 207, 207, 0.8);
-  height: 430px;
-  width: 100%;
-  padding: 0px;
-  bottom: 5px;
-}
-
-#carouselAquatico {
-  position: absolute;
-  height: 99%;
-  width: 99%;
-  margin: 0.5%;
-}
-
-#carousel-inner-Aquatico {
-  position: absolute;
-  height: 100%;
-  width: 100%;
-}
-
-#carousel-inner-Aquatico .carousel-item {
-  height: 100%;
-  background-size: contain;
-  background-repeat: no-repeat;
-  background-position: center;
-}
-
-#texto-aventuras {
-  padding: 0;
-  background-color: rgba(220, 220, 220, 0.8);
-}
-
-.gallery {
-  padding: 10px;
-  background-color: rgba(220, 220, 220, 0.8);
-}
-
-footer .row {
-  background-color: rgb(25,25,112);
-  color: white;
-  height: 200px;
-  margin: 0px !important;
-  padding-top: 0px !important;
-}
-
-.pt-4, .py-4 {
-  padding-top: 10px !important;
-}
-
-.mt-3, .my-3 {
-  position: relative;
-  margin: 0px !important;
-  padding-top: 10px !important;
-
-}
-
-#reservas p {
-  text-align: center;
-  font-size: 1.1rem;
-  margin: 0px !important;
-}
-
-#media {
-  height: 200px;
-  margin: 0px;
-  padding: 0px;
-  padding: 10px;
-}
-
-#logos {
-  text-align: center;
-}
-
-#logos a {
-  display: inline-block;
-}
-
-.logo {
-  height: 60px;
-  padding: 10px;
-}
-
-#medias-p {
-  padding-top: 10px;
-  text-align: center;
-  font-size: 1.1rem;
-  margin: 0px;
-  padding: 0px;
-}
-
-#endereco-p {
-  padding-top: 10px;
-  text-align: center;
-  font-size: 1.1rem;
-  margin: 0px;
-  padding: 0px;
-}
-
-#mapa-div {
-  position: relative;
-  padding: 0px;
-}
-
-#mapa {
-  position: absolute;
-  height: 100%;
-  width: 100%;
-  padding: 0px;
-  left: 0px;
-}
-
-iframe {
-  position: absolute;
-  width: 100%;
-  height: 100%;
-  padding: 3px;
-}
-
-.footer-copyright {
-  padding: 3px !important;
-  height: 20px;
-  color: white;
-  font-size: 0.7rem;
-  background-color: rgb(16, 16, 75);
+@media(min-width:993px) {
+  .icones1 {
+    display: none;
+  }
 }
 
 @media(max-width:992px) {
@@ -371,7 +213,7 @@ iframe {
   }
 
   .row2 {
-    height: 620px;
+    height: 780px;
   }
 
   .texto {
@@ -400,253 +242,54 @@ iframe {
     height: 100%;
   }
 
-  #slideshowCamping {
-    bottom: 0;
-    margin: 1%;
-    width: 98%;
-    height: 300px;
-  }
-
-  #carouselCamping {
-    position: absolute;
-    bottom: 0;
-    height: 100%;
-
-  }
-
-  #row2-aquatico {
-    height: 500px;
-  }
-
-  #texto-aquatico {
-    height: 150px;
-  }
-
-  #slideshowAquatico {
-    height: 300px;
-  }
-
-  #carouselAquatico {
-    position: absolute;
-    bottom: 0;
-    height: 300px;
-    width: 100%;
-  }
-
-  #texto-aventuras {
-    height: 250px;
-  }
-
-}
-
-
-@media(max-width:768px) {
-
-  #saudacao {
-    bottom: 50px;
-  }
-
-  footer .row {
-    height: 475px;
-  }
-
-  #media {
-    margin-bottom: 0 !important;
-    height: 150px;
-  }
-
-  #mapa-div {
-    height: 200px;
-  }
-
-  iframe {
-    left: 0;
-  }
-
-}
-
-
-@media(max-width:576px) {
-
-  #navbar .navbar-brand img {
-    height: 40px;
-  }
-
-  #navbar .nav-item {
-    height: 2rem;
-  }
-
-  #navbar .navbar a {
-    font-size: 1em;
-  }
-
-  #saudacao {
+  .icones {
     height: 100px;
-    right: 5px;
-  }
-
-  .pusher {
-    height: 56px;
-  }
-
-  .row1 {
-    background-color: rgb(25,25,112);
-    color: white;
-    font-weight: bold;
-    height: 40px;
-    line-height: 35px;
-    padding-top: 2.5px;
-    font-size: 1.2em;
-    padding-right: 0px;
-    text-align: left;
-    border-bottom: solid 0.5px white;
-  }
-
-  .row2 {
-    height: 620px;
-    border: none;
-  }
-
-  #carouselChales {
-    position: absolute;
-    bottom: 0;
-    height: 280px;
-    width: 90%;
-    margin: 5px 5%;
-  } 
-
-  #carouselCamping {
-    position: absolute;
-    bottom: 0;
-    height: 280px;
-    width: 90%;
-    margin: 5px 5%;
-  }
-
-  .texto h1 {
-    font-size: 1.4em;
-  }
-
-  .texto p {
-    font-size: 1.1em;
-    padding: 0px;
-  }
-
-  .texto {
-    padding: 10px;
-    height: 200px;
-  }
-
-  #row2-aquatico {
-    height: 550px;
-  }
-
-  #texto-aquatico {
-    height: 180px;
-  }
-
-  #slideshowAquatico {
-    height: 280px;
     width: 100%;
   }
 
-  #carouselAquatico {
+  .icones1 {
     position: absolute;
-    bottom: 0;
-    height: 100%;
-    width: 99%;
-  }
-  
-  footer .row {
-    height: 500px;
+    width: 100%;
+    left: 50%;
+    transform: translateX(-50%);
   }
 
-  #endereco-p {
-    font-size: 0.9rem;
+  .icones2 {
+    display: none;
   }
+}
 
+
+@media(max-width:768px)  {
+  .icones2 {
+    display: none;
+  }
+}
+
+
+@media(max-width:576px)  {
+  icones2 {
+    display: none;
+  }
+}
+
+
+@media (max-width: 450px) {
+  icones2 {
+    display: none;
+  }
 }
 
 
 @media(max-width:411px) {
-  
-  .row2 {
-    height: 750px;
+  icones2 {
+    display: none;
   }
-
-  .texto {
-    padding: 10px;
-    height: 250px;
-  }
-
-  .texto p {
-    font-size: 1.1em;
-    padding: 0px;
-  }
-
-  #nav-tabs a {
-    font-size: 0.8em;
-  }
-
-  #row2-chales {
-    height: 750px;
-  }
-
-  #row2-camping {
-    height: 650px;
-  }
-
-  #medias-p {
-    font-size: 1rem;
-  }
-
-  #reservas p {
-    font-size: 0.9rem;
-  }
-
-  .logo {
-    height: 50px;
-  }
-
 }
 
-.gallery {
-  -webkit-column-count: 3;
-  -moz-column-count: 3;
-  column-count: 3;
-  -webkit-column-width: 33%;
-  -moz-column-width: 33%;
-  column-width: 33%; }
-  .gallery .pics {
-  -webkit-transition: all 350ms ease;
-  transition: all 350ms ease; }
-  .gallery .animation {
-  -webkit-transform: scale(1);
-  -ms-transform: scale(1);
-  transform: scale(1);
-}
-
-@media (max-width: 450px) {
-
-  .gallery {
-    -webkit-column-count: 1;
-    -moz-column-count: 1;
-    column-count: 1;
-    -webkit-column-width: 100%;
-    -moz-column-width: 100%;
-    column-width: 100%;
-    margin-top: -20px;
-  }
-
-}
 
 @media (max-width: 400px) {
-
-  .btn.filter {
-    padding-left: 1.1rem;
-    padding-right: 1.1rem;
+  icones2 {
+    display: none;
   }
-
-
 }
-

@@ -153,6 +153,22 @@ body {
   height: 700px;
 }
 
+.icones {
+  position: relative;
+  height: 150px;
+}
+
+.icone-img {
+  position: absolute;
+  left: 50%;
+  transform: translateX(-50%);
+}
+
+#icones2-chales {
+  position: absolute;
+  height: 100%;
+}
+
 #slideshowChales {
   position: absolute;
   background-color: rgba(209, 207, 207, 0.8);
@@ -183,7 +199,8 @@ body {
 
 #row2-camping {
   position: relative;
-  height: 570px;
+  margin-top: 20px;
+  height: 630px;
 }
 
 #slideshowCamping {
@@ -218,11 +235,15 @@ body {
   right: 0px;
 }
 
+#icones2-camping {
+  position: absolute;
+  height: 100%;
+}
+
 #texto-aquatico {
   height: 150px;
   padding: 15px;
 }
-
 
 #slideshowAquatico {
   position: absolute;
@@ -230,20 +251,20 @@ body {
   height: 430px;
   width: 100%;
   padding: 0px;
-  bottom: 5px;
+  bottom: 0px;
 }
 
 #carouselAquatico {
   position: absolute;
-  height: 99%;
-  width: 99%;
-  margin: 0.5%;
+  height: 100%;
+  width: 100%;
 }
 
 #carousel-inner-Aquatico {
   position: absolute;
   height: 100%;
   width: 100%;
+  padding: 0.5%;
 }
 
 #carousel-inner-Aquatico .carousel-item {
@@ -253,9 +274,21 @@ body {
   background-position: center;
 }
 
+#row2-aventuras {
+  height: 800px;
+}
+
 #texto-aventuras {
-  padding: 0;
-  background-color: rgba(220, 220, 220, 0.8);
+  height: 400px;
+  padding: 15px;
+}
+
+.lista {
+  padding: 0px 15px;
+}
+
+.lista span {
+  font-size: 1.1rem;
 }
 
 .gallery {
@@ -266,7 +299,7 @@ body {
 footer .row {
   background-color: rgb(25,25,112);
   color: white;
-  height: 200px;
+  height: 250px;
   margin: 0px !important;
   padding-top: 0px !important;
 }
@@ -286,6 +319,11 @@ footer .row {
   text-align: center;
   font-size: 1.1rem;
   margin: 0px !important;
+}
+
+#reservas p a {
+  color: white;
+  text-decoration: underline;
 }
 
 #media {
@@ -352,6 +390,18 @@ iframe {
   background-color: rgb(16, 16, 75);
 }
 
+@media(min-width:993px) {
+
+  #icones1-chales {
+    display: none;
+  }
+
+  #icones1-camping {
+    display: none;
+  }
+
+}
+
 @media(max-width:992px) {
   
   #navbar .navbar-brand img {
@@ -376,7 +426,6 @@ iframe {
 
   .texto {
     padding: 10px;
-    height: 220px;
   }
 
   .texto h1 {
@@ -385,6 +434,27 @@ iframe {
 
   .texto p {
     font-size: 1.2em;
+  }
+
+  .icones {
+    height: 100px;
+    width: 100%;
+  }
+
+  #icones1-chales {
+    height: 70px;
+  }
+
+  #icones1-camping {
+    height: 70px;
+  }
+
+  #icones2-chales {
+    display: none;
+  }
+
+  #icones2-camping {
+    display: none;
   }
 
   #slideshowChales {
@@ -400,6 +470,10 @@ iframe {
     height: 100%;
   }
 
+  #row2-camping {
+    height: 630px;
+  }
+
   #slideshowCamping {
     bottom: 0;
     margin: 1%;
@@ -411,7 +485,6 @@ iframe {
     position: absolute;
     bottom: 0;
     height: 100%;
-
   }
 
   #row2-aquatico {
@@ -437,6 +510,10 @@ iframe {
     height: 250px;
   }
 
+  footer .row {
+    height: 280px;
+  }
+
 }
 
 
@@ -446,8 +523,24 @@ iframe {
     bottom: 50px;
   }
 
+  #row2-chales {
+    height: 750px;
+  }
+
+  #row2-camping {
+    height: 670px;
+  }
+
+  #icones1-chales {
+    height: 50px;
+  }
+
+  #icones1-camping {
+    height: 50px;
+  }
+
   footer .row {
-    height: 475px;
+    height: 550px;
   }
 
   #media {
@@ -502,9 +595,16 @@ iframe {
     border-bottom: solid 0.5px white;
   }
 
-  .row2 {
-    height: 620px;
-    border: none;
+  #icones1-chales {
+    height: 40px;
+  }
+
+  #icones1-camping {
+    height: 40px;
+  }
+
+  #row2-chales {
+    height: 710px;
   }
 
   #carouselChales {
@@ -514,6 +614,10 @@ iframe {
     width: 90%;
     margin: 5px 5%;
   } 
+
+  #row2-camping {
+    height: 630px;
+  }
 
   #carouselCamping {
     position: absolute;
@@ -558,7 +662,7 @@ iframe {
   }
   
   footer .row {
-    height: 500px;
+    height: 550px;
   }
 
   #endereco-p {
@@ -566,7 +670,6 @@ iframe {
   }
 
 }
-
 
 @media(max-width:411px) {
   
@@ -588,12 +691,30 @@ iframe {
     font-size: 0.8em;
   }
 
+  #icones1-chales {
+    display: none;
+  }
+
+  #icones1-camping {
+    display: none;
+  }
+
+  #icones2-chales {
+    display: initial;
+    height: 80px;
+  }
+
+  #icones2-camping {
+    display: initial;
+    height: 80px;
+  }
+
   #row2-chales {
-    height: 750px;
+    height: 830px;
   }
 
   #row2-camping {
-    height: 650px;
+    height: 750px;
   }
 
   #medias-p {
@@ -647,6 +768,4 @@ iframe {
     padding-right: 1.1rem;
   }
 
-
 }
-
