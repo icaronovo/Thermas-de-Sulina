@@ -254,6 +254,10 @@ body {
   bottom: 0px;
 }
 
+#row2-aquatico {
+  height: 580px;
+}
+
 #carouselAquatico {
   position: absolute;
   height: 100%;
@@ -275,11 +279,46 @@ body {
 }
 
 #row2-aventuras {
-  height: 800px;
+  position: relative;
+  height: 1200px;
+}
+
+#galeriaAventuras-col {
+  position: absolute;
+  bottom: 0px;
+}
+
+#slideshowAventuras {
+  position: absolute;
+  background-color: rgba(209, 207, 207, 0.8);
+  height: 430px;
+  width: 100%;
+  padding: 0px;
+  bottom: 0px;
+}
+
+#carouselAventuras {
+  position: absolute;
+  height: 100%;
+  width: 100%;
+}
+
+#carousel-inner-Aventuras {
+  position: absolute;
+  height: 100%;
+  width: 100%;
+  padding: 0.5%;
+}
+
+#carousel-inner-Aventuras .carousel-item {
+  height: 100%;
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-position: center;
 }
 
 #texto-aventuras {
-  height: 400px;
+  height: 350px;
   padding: 15px;
 }
 
@@ -288,7 +327,7 @@ body {
 }
 
 .lista span {
-  font-size: 1.1rem;
+  font-size: 1.2rem;
 }
 
 .gallery {
@@ -388,6 +427,12 @@ iframe {
   color: white;
   font-size: 0.7rem;
   background-color: rgb(16, 16, 75);
+}
+
+@media(max-width:1200px) {
+  #row2-aventuras {
+    height: 1100px;
+  }
 }
 
 @media(min-width:993px) {
@@ -506,6 +551,10 @@ iframe {
     width: 100%;
   }
 
+  #row2-aventuras {
+    height: 900px;
+  }
+
   #texto-aventuras {
     height: 250px;
   }
@@ -515,7 +564,6 @@ iframe {
   }
 
 }
-
 
 @media(max-width:768px) {
 
@@ -539,6 +587,10 @@ iframe {
     height: 50px;
   }
 
+  #row2-aventuras {
+    height: 800px;
+  }
+
   footer .row {
     height: 550px;
   }
@@ -558,6 +610,11 @@ iframe {
 
 }
 
+@media(min-width:577px) {
+  #slideshowAventuras {
+    display: none;
+  }
+}
 
 @media(max-width:576px) {
 
@@ -642,7 +699,7 @@ iframe {
   }
 
   #row2-aquatico {
-    height: 550px;
+    height: 500px;
   }
 
   #texto-aquatico {
@@ -660,6 +717,10 @@ iframe {
     height: 100%;
     width: 99%;
   }
+
+  #galeriaAventuras-col {
+    display: none;
+  }
   
   footer .row {
     height: 550px;
@@ -669,6 +730,17 @@ iframe {
     font-size: 0.9rem;
   }
 
+}
+
+@media(max-width:460px) {
+  #slideshowAventuras {
+    height: 380px;
+  }
+
+  #row2-aquatico {
+    height: 520px;
+  }
+  
 }
 
 @media(max-width:411px) {
@@ -717,6 +789,10 @@ iframe {
     height: 750px;
   }
 
+  #slideshowAventuras {
+    height: 350px;
+  }
+
   #medias-p {
     font-size: 1rem;
   }
@@ -744,8 +820,25 @@ iframe {
   .gallery .animation {
   -webkit-transform: scale(1);
   -ms-transform: scale(1);
-  transform: scale(1);
-}
+  transform: scale(1); }
+  
+  @media (max-width: 450px) {
+    .gallery {
+    -webkit-column-count: 1;
+    -moz-column-count: 1;
+    column-count: 1;
+    -webkit-column-width: 100%;
+    -moz-column-width: 100%;
+    column-width: 100%;
+    }
+  }
+  
+  @media (max-width: 400px) {
+    .btn.filter {
+    padding-left: 1.1rem;
+    padding-right: 1.1rem;
+    }
+  }
 
 @media (max-width: 450px) {
 
@@ -769,3 +862,10 @@ iframe {
   }
 
 }
+
+@media(max-width:360px) {
+  #slideshowAventuras {
+    height: 350px;
+  }
+}
+
